@@ -1,0 +1,31 @@
+# Use the latest Ubuntu image
+FROM ubuntu:latest
+
+# Install dependencies
+RUN apt-get update && \
+    apt-get install -y curl git jq
+
+# Copy the scripts to the container
+COPY install_hugo.sh /install_hugo.sh
+COPY install_dart_sass.sh /install_dart_sass.sh
+
+# Run the scripts to install Hugo and Dart Sass
+RUN /install_hugo.sh
+RUN /install_dart_sass.sh
+
+# Clone the Hugo site repository and update submodules
+RUN git clone -b main --recurse-submodules https://github.com/justin-napolitano/jnapolitano.com.git /site && \
+    cd /site && \
+    git submodule update --init --recursive
+
+# Set the working directory
+WORKDIR /site
+
+# Build the Hugo site with specific options
+RUN hugo --gc --minify --baseURL "http://localhost:1313/"
+
+# Expose port 1313 for Hugo server
+EXPOSE 1313
+
+# Default command to run Hugo server
+CMD ["hugo", "server", "--bind", "0.0.0.0", "--baseURL", "http://localhost:1313/"]
