@@ -1,12 +1,26 @@
 ---
-slug: "github-hugo-install-script"
-title: "hugo-install-script"
-repo: "justin-napolitano/hugo-install-script"
-githubUrl: "https://github.com/justin-napolitano/hugo-install-script"
-generatedAt: "2025-11-23T09:06:09.016706Z"
-source: "github-auto"
+slug: github-hugo-install-script
+title: Automating Hugo Installation on Linux with Shell Scripts and Docker
+repo: justin-napolitano/hugo-install-script
+githubUrl: https://github.com/justin-napolitano/hugo-install-script
+generatedAt: '2025-11-23T09:06:09.016706Z'
+source: github-auto
+summary: >-
+  Shell scripts and Dockerfiles automate installing the latest Hugo extended edition and Dart Sass
+  on Debian-based Linux systems.
+tags:
+  - hugo
+  - linux
+  - shell-scripting
+  - debian
+  - docker
+seoPrimaryKeyword: hugo installation
+seoSecondaryKeywords:
+  - shell script
+  - linux automation
+  - dockerfile
+seoOptimized: true
 ---
-
 
 # Technical Overview: hugo-install-script
 
@@ -45,3 +59,4 @@ The scripts assume a Debian-based Linux distribution due to the use of `.deb` pa
 ## Summary
 
 This repository encapsulates a pragmatic approach to automating Hugo installation on Linux, reducing manual overhead and ensuring users can quickly obtain the latest version. The addition of Dockerfiles supports containerized workflows, aligning with modern development and deployment practices. Future improvements could focus on robustness, cross-platform support, and configurability.
+
