@@ -20,6 +20,12 @@ seoSecondaryKeywords:
   - linux automation
   - dockerfile
 seoOptimized: true
+topicFamily: automation
+topicFamilyConfidence: 0.95
+topicFamilyNotes: >-
+  The post focuses on shell scripts and Dockerfiles that automate installing Hugo and Dart Sass on
+  Debian Linux. It centers around automating build and deployment workflows, matching the Automation
+  family description and examples closely.
 ---
 
 # Technical Overview: hugo-install-script
@@ -59,4 +65,5 @@ The scripts assume a Debian-based Linux distribution due to the use of `.deb` pa
 ## Summary
 
 This repository encapsulates a pragmatic approach to automating Hugo installation on Linux, reducing manual overhead and ensuring users can quickly obtain the latest version. The addition of Dockerfiles supports containerized workflows, aligning with modern development and deployment practices. Future improvements could focus on robustness, cross-platform support, and configurability.
+
 
