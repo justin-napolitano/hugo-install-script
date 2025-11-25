@@ -1,20 +1,28 @@
 ---
 slug: github-hugo-install-script
 id: github-hugo-install-script
-title: hugo-install-script
+title: Automated Hugo Installation Script for Linux Environments
 repo: justin-napolitano/hugo-install-script
 githubUrl: https://github.com/justin-napolitano/hugo-install-script
 generatedAt: '2025-11-24T21:35:06.077Z'
 source: github-auto
 summary: >-
-  A collection of shell scripts and Docker configurations designed to automate
-  the installation of Hugo, the static site generator, and related tools like
-  Dart Sass. This repository simplifies setting up Hugo on Linux environments
-  with minimal manual steps.
-tags: []
-seoPrimaryKeyword: ''
-seoSecondaryKeywords: []
-seoOptimized: false
+  This repository provides shell scripts and Docker configurations to automate
+  Hugo installation and setup on Linux systems.
+tags:
+  - hugo
+  - docker
+  - bash
+  - linux
+  - dart sass
+seoPrimaryKeyword: hugo installation script
+seoSecondaryKeywords:
+  - automate hugo setup
+  - docker hugo
+  - bash scripts for linux
+  - dart sass installation
+  - linux development tools
+seoOptimized: true
 topicFamily: null
 topicFamilyConfidence: null
 kind: project
