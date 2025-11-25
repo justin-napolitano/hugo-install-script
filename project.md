@@ -7,8 +7,8 @@ githubUrl: https://github.com/justin-napolitano/hugo-install-script
 generatedAt: '2025-11-24T21:35:06.077Z'
 source: github-auto
 summary: >-
-  This repository provides scripts and Docker configurations to automate Hugo
-  installation on Linux, simplifying setup and management.
+  This repository provides scripts and Docker configurations to automate Hugo installation on Linux,
+  simplifying setup and management.
 tags:
   - hugo
   - docker
@@ -24,8 +24,8 @@ seoSecondaryKeywords:
   - dart sass installation
   - linux automation tools
 seoOptimized: true
-topicFamily: null
-topicFamilyConfidence: null
+topicFamily: automation
+topicFamilyConfidence: 0.9
 kind: project
 entryLayout: project
 showInProjects: true
@@ -112,4 +112,5 @@ docker build -f DockerFileProd -t hugo-prod .
 - Automate version pinning or allow specifying Hugo versions.
 - Extend Dockerfiles with multi-stage builds for smaller images.
 - Incorporate automated testing for installation scripts.
+
 
